@@ -6,7 +6,7 @@
 /*   By: nschwob <nschwob@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 03:07:52 by nschwob           #+#    #+#             */
-/*   Updated: 2022/11/18 03:17:26 by nschwob          ###   ########.fr       */
+/*   Updated: 2022/11/21 18:01:23 by nschwob          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,11 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	
+	if (!lst)
+		return ;
+	while (lst->next != 0)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }

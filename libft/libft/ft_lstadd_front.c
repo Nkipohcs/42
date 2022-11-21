@@ -6,7 +6,7 @@
 /*   By: nschwob <nschwob@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 03:05:32 by nschwob           #+#    #+#             */
-/*   Updated: 2022/11/18 03:13:42 by nschwob          ###   ########.fr       */
+/*   Updated: 2022/11/21 18:06:53 by nschwob          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new);
 {
-	
+		if ((!new) || (!alst))
+		return ;
+	new->next = *alst;
+	*alst = new;
 }

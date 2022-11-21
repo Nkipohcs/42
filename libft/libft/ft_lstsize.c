@@ -6,7 +6,7 @@
 /*   By: nschwob <nschwob@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 03:07:01 by nschwob           #+#    #+#             */
-/*   Updated: 2022/11/18 03:17:26 by nschwob          ###   ########.fr       */
+/*   Updated: 2022/11/21 18:10:04 by nschwob          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,13 @@
 
 int	ft_lstsize(t_list *lst);
 {
-	
+		int i;
+
+	i = 0;
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }

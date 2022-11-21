@@ -6,7 +6,7 @@
 /*   By: nschwob <nschwob@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 03:10:11 by nschwob           #+#    #+#             */
-/*   Updated: 2022/11/18 03:13:36 by nschwob          ###   ########.fr       */
+/*   Updated: 2022/11/21 18:03:20 by nschwob          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,16 @@
 void	ft_lstclear(t_list **lst, void (*del)(void
 *))
 {
-	
+		t_list *counter;
+
+	if ((!lst) || (!del))
+		return ;
+	while (*lst)
+	{
+		counter = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = counter;
+	}
+	*lst = 0;
+
 }
