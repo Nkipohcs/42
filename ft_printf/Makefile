@@ -16,7 +16,7 @@ SRCS =
 
 $(NAME)
 
-CFLAGS = -Wall, -Wextra et -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 CC = gcc $(CFLAGS)
 
