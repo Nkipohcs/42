@@ -13,5 +13,36 @@
 #include "ft_printf.h"
 
 /*%x Affiche un nombre en hexadécimal (base 16) avec des lettres minuscules.*/
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Untitled-1                                         :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nschwob <nschwob@student.42.fr>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/12/06 03:55:48 by nschwob           #+#    #+#              #
+#    Updated: 2022/12/06 03:55:48 by nschwob          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-int convert_x()
+int convert_x (int e)
+{
+char base;
+char strx;
+int i;
+int e2
+
+base = "01234569abcdef";
+strx = ft_itoa(e);
+i = -1;
+e2 = e;
+
+while(strx[++i])
+{
+    if (strx[i] => '10' && strx[i] =< '16')
+        {
+            % 16
+        }
+}
+
+}
